@@ -30,3 +30,5 @@ sudo apt-get install youtube-dl -y
 sudo apt-get install gparted -y
 ################################################
 sudo apt-get autoremove -y
+
+sudo gedit /etc/fstab
