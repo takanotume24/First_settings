@@ -28,7 +28,10 @@ sudo apt-get install oracle-java8-installer -y
 sudo apt-get install oracle-java8-set-default -y
 sudo apt-get install youtube-dl -y
 sudo apt-get install gparted -y
+sudo apt-get install guake
 ################################################
 sudo apt-get autoremove -y
 
+
+#swapsetting
 sudo gedit /etc/fstab
