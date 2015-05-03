@@ -31,13 +31,16 @@ sudo apt-get install oracle-java8-set-default -y
 sudo apt-get install youtube-dl -y
 sudo apt-get install gparted -y
 sudo apt-get install guake
+sudo apt-get install ubuntu-xboxdrv
 
 ################################################
 sudo apt-get autoremove -y
 
 #LINE install
-mkdir pedgin-line
-cd pedgin-line
+cd 
+#LINE install
+mkdir pidgin-line
+cd pidgin-line
 google-chrome-stable http://line.me/ja/download
 sudo apt-get install pidgin -y
 sudo apt-get install libpurple0 libpurple-dev libpurple-bin -y
@@ -45,18 +48,19 @@ sudo apt-get install libboost-dev libboost-test-dev libboost-program-options-dev
 google-chrome-stable http://www.apache.org/dyn/closer.cgi?path=/thrift/0.9.2/thrift-0.9.2.tar.gz
 google-chrome-stable http://blog.livedoor.jp/hiroumauma/archives/1710677.html
 wget http://ftp.riken.jp/net/apache/thrift/0.9.2/thrift-0.9.2.tar.gz 
-tar xvzf thift*
+tar xvzf thrift*
+cd thrift*
 ls
 ./configure --without-tests
 make
 sudo make install
+cd ..
 git clone http://altrepo.eu/git/purple-line.git/
 cd purple-line*
- wget http://altrepo.eu/git/line-protocol.git/blob_plain/HEAD:/line_main.thrift
+git clone http://altrepo.eu/git/line-protocol.git/
 make
 make install
 sudo ldconfig
-
 #swapsetting
 sudo gedit /etc/fstab
 google-chrome-stable http://qiita.com/scleen_x_x/items/f3fc492bcbf0f6c2896c
